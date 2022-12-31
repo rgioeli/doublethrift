@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.end("This is the end.");
+  res.end("This is for the birds, yal.");
 });
 
 console.log("All is well!");
