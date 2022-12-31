@@ -9,4 +9,6 @@ app.get("/", (req, res) => {
   res.end("This is the end.");
 });
 
+console.log("All is well!");
+
 app.listen(PORT, () => console.log("You are now connected on port" + PORT));
