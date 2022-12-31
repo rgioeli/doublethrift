@@ -5,8 +5,9 @@ const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 
-app.get("/", (req, res) => {
-  res.json({
+app.get("/:name", (req, res) => {
+  const name = req.params("name");
+  const data = {
     name: "Robert",
     age: 32,
     kids: [
@@ -19,7 +20,8 @@ app.get("/", (req, res) => {
         age: 2,
       },
     ],
-  });
+  };
+  res.json(name);
 });
 
 console.log("All is well!");
