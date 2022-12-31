@@ -6,7 +6,20 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.end("This is for the birds, yal.");
+  res.json({
+    name: "Robert",
+    age: 32,
+    kids: [
+      {
+        name: "Julian",
+        age: 6,
+      },
+      {
+        name: "Ava",
+        age: 2,
+      },
+    ],
+  });
 });
 
 console.log("All is well!");
