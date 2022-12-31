@@ -21,7 +21,8 @@ app.get("/:name", (req, res) => {
       },
     ],
   };
-  res.json(name);
+  const dataToSendBack = data.kids.filter((n) => n.name == name);
+  res.json(dataToSendBack);
 });
 
 console.log("All is well!");
