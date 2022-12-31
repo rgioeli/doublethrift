@@ -9,7 +9,7 @@
   "name": "doublethrift",
   "version": "1.0.0",
   "description": "thrift store sales page",
-  "main": "index.js",
+  "main": "doublelift.herokuapp.com",
   "author": "robert gioeli",
   "license": "MIT"
 }
