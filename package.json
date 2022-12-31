@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "scripts": {
+    "dev": "node index"
+  },
+  "name": "doublethrift",
+  "version": "1.0.0",
+  "description": "thrift store sales page",
+  "main": "index.js",
+  "author": "robert gioeli",
+  "license": "MIT"
+}
