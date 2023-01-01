@@ -9,6 +9,10 @@ dotenv.config();
 
 // ROUTES
 app.get("/products", (req, res) => {
+  const key = req.header("api-key");
+  if (key !== "brittany") {
+    res.status(400).send("You are not brittany! Goodbye!");
+  }
   res.status(200).json([
     {
       name: "Brittany",
